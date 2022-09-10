@@ -2,7 +2,7 @@
 layout: post
 title: "My Japanese Journey"
 subtitle: "Why and how I learned Japanese"
-background: '/img/posts/01.jpg'
+background: '/img/posts/japanese-journey/background.jpg'
 ---
 
 ## My childhood 
