@@ -1,0 +1,25 @@
+title:              Ricardo Huaman
+email:              rotvie@gmail.com
+description:        What I've learned
+author:             Ricardo Huaman
+baseurl:            ""
+url:                "https://Rotvie.github.io"
+
+# Social Profiles
+twitter_username: rotvie
+github_username: Rotvie
+facebook_username: rotvie
+instagram_username: rotvie
+linkedin_username: ricardo-jesus-huaman-kemper
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
