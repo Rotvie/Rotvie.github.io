@@ -8,10 +8,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>How  to get microROS up and running on Raspberry Pi Pico? | Ricardo Huaman</title>
-    <meta name="author" content="You R. Name">
+    <title>Setting Up and Running microROS on Raspberry Pi Pico | Ricardo Huaman</title>
+    <meta name="author" content="Ricardo Huaman">
     <meta name="description" content="an example of a distill-style blog post and main elements">
-    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+    <meta name="keywords" content="ros, microROS, microcontroller, robotics">
 
 
     <!-- Bootstrap & MDB -->
@@ -88,13 +88,13 @@
   <body>
 <d-front-matter>
     <script async type="text/json">{
-      "title": "a distill-style blog post",
-      "description": "an example of a distill-style blog post and main elements",
+      "title": "Setting Up and Running microROS on Raspberry Pi Pico",
+      "description": "A tutorial on how to get microROS and ROS2 working together",
       "published": "Jun 08, 2023",
       "authors": [
         {
           "author": "Ricardo Huaman",
-          "authorURL": "https://en.wikipedia.org/wiki/Albert_Einstein",
+          "authorURL": "https://github.com/Rotvie",
           "affiliations": [
             {
               "name": "EED, UPAO",
@@ -201,8 +201,8 @@
     <div class="post distill">
 
       <d-title>
-        <h1>a distill-style blog post</h1>
-        <p>an example of a distill-style blog post and main elements</p>
+        <h1>Setting Up and Running microROS on Raspberry Pi Pico</h1>
+        <p>A tutorial on how to get microROS and ROS2 working together</p>
       </d-title>
 
       <d-byline></d-byline>
@@ -215,7 +215,6 @@
             <div><a href="#citations">Citations</a></div>
             <div><a href="#footnotes">Footnotes</a></div>
             <div><a href="#code-blocks">Code Blocks</a></div>
-            <div><a href="#interactive-plots">Interactive Plots</a></div>
             <div><a href="#layouts">Layouts</a></div>
             <div><a href="#other-typography">Other Typography?</a></div>
             
@@ -281,36 +280,7 @@ You can always use the default code-highlight using the <code class="language-pl
 
 <hr>
 
-<h2 id="interactive-plots">Interactive Plots</h2>
 
-<p>You can add interative plots using plotly + iframes <img class="emoji" title=":framed_picture:" alt=":framed_picture:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f5bc.png" height="20" width="20"></p>
-
-<div class="l-page">
-  <iframe src="/assets/plotly/demo.html" frameborder="0" scrolling="no" height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
-</div>
-
-<p>The plot must be generated separately and saved into an HTML file.
-To generate the plot that you see above, you can use the following code snippet:</p>
-
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-<span class="kn">import</span> <span class="n">plotly.express</span> <span class="k">as</span> <span class="n">px</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">read_csv</span><span class="p">(</span>
-  <span class="sh">'</span><span class="s">https://raw.githubusercontent.com/plotly/datasets/master/earthquakes-23k.csv</span><span class="sh">'</span>
-<span class="p">)</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="p">.</span><span class="nf">density_mapbox</span><span class="p">(</span>
-  <span class="n">df</span><span class="p">,</span>
-  <span class="n">lat</span><span class="o">=</span><span class="sh">'</span><span class="s">Latitude</span><span class="sh">'</span><span class="p">,</span>
-  <span class="n">lon</span><span class="o">=</span><span class="sh">'</span><span class="s">Longitude</span><span class="sh">'</span><span class="p">,</span>
-  <span class="n">z</span><span class="o">=</span><span class="sh">'</span><span class="s">Magnitude</span><span class="sh">'</span><span class="p">,</span>
-  <span class="n">radius</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-  <span class="n">center</span><span class="o">=</span><span class="nf">dict</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="mi">180</span><span class="p">),</span>
-  <span class="n">zoom</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-  <span class="n">mapbox_style</span><span class="o">=</span><span class="sh">"</span><span class="s">stamen-terrain</span><span class="sh">"</span><span class="p">,</span>
-<span class="p">)</span>
-<span class="n">fig</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
-<span class="n">fig</span><span class="p">.</span><span class="nf">write_html</span><span class="p">(</span><span class="sh">'</span><span class="s">assets/plotly/demo.html</span><span class="sh">'</span><span class="p">)</span></code></pre></figure>
-
-<hr>
 
 <h2 id="details-boxes">Details boxes</h2>
 
