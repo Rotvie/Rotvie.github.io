@@ -211,9 +211,9 @@
         <d-contents>
           <nav class="l-text figcaption">
           <h3>Contents</h3>
-            <div><a href="#equations">Equations</a></div>
-            <div><a href="#citations">Citations</a></div>
-            <div><a href="#footnotes">Footnotes</a></div>
+            <div><a href="#Introduction">Introduction</a></div>
+            <div><a href="#Setting up the Environment">Setting up the Environment</a></div>
+            <div><a href="#Pico-SDK and microROS">Pico-SDK and microROS</a></div>
             <div><a href="#code-blocks">Code Blocks</a></div>
             <div><a href="#layouts">Layouts</a></div>
             <div><a href="#other-typography">Other Typography?</a></div>
@@ -221,22 +221,15 @@
           </nav>
         </d-contents>
 
-        <h2 id="equations">Equations</h2>
+        <h2 id="Introduction">Introduction</h2>
 
-<p>This theme supports rendering beautiful math in inline and display modes using <a href="https://www.mathjax.org/" rel="external nofollow noopener" target="_blank">MathJax 3</a> engine.
-You just need to surround your math expression with <code class="language-plaintext highlighter-rouge">$$</code>, like <code class="language-plaintext highlighter-rouge">$$ E = mc^2 $$</code>.
-If you leave it inside a paragraph, it will produce an inline expression, just like \(E = mc^2\).</p>
-
-<p>To use display mode, again surround your expression with <code class="language-plaintext highlighter-rouge">$$</code> and place it as a separate paragraph.
-Here is an example:</p>
-
-\[\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)\]
-
-<p>Note that MathJax 3 is <a href="https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html" rel="external nofollow noopener" target="_blank">a major re-write of MathJax</a> that brought a significant improvement to the loading and rendering speed, which is now <a href="http://www.intmath.com/cg5/katex-mathjax-comparison.php" rel="external nofollow noopener" target="_blank">on par with KaTeX</a>.</p>
+<p>In the rapidly evolving world of robotics and embedded systems, microROS is a game-changer. It brings the capabilities of ROS (Robot Operating System) 2 to microcontrollers, facilitating the development of robust and interactive systems. The Raspberry Pi Pico, with its powerful RP2040 chip, provides an excellent platform for such applications. 
+  This tutorial will guide you through setting up and running microROS on the Raspberry Pi Pico. The ability to publish and subscribe to topics directly from the microcontroller, a standout feature of microROS, allows for real-time communication and data exchange, fostering complex, coordinated behaviors. Additionally, microROS's reduced memory footprint makes it ideal for devices with limited resources.
+  Whether you're a hobbyist or an experienced engineer, by the end of this tutorial, you'll be equipped to leverage the power of microROS on your Raspberry Pi Pico. Let's get started!</p>
 
 <hr>
 
-<h2 id="citations">Citations</h2>
+<h2 id="Setting up the Environment">Setting up the Environment</h2>
 
 <p>Citations are then used in the article body with the <code class="language-plaintext highlighter-rouge">&lt;d-cite&gt;</code> tag.
 The key attribute is a reference to the id provided in the bibliography.
@@ -250,7 +243,7 @@ However, we consider it good style to mention author last names if you discuss s
 
 <hr>
 
-<h2 id="footnotes">Footnotes</h2>
+<h2 id="Pico-SDK and microROS">Pico-SDK and microROS</h2>
 
 <p>Just wrap the text you would like to show up in a footnote in a <code class="language-plaintext highlighter-rouge">&lt;d-footnote&gt;</code> tag.
 The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote></p>
@@ -522,7 +515,7 @@ This line is only separated by a single newline, so it’s a separate line in th
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2023 You R. Name. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+        © Copyright 2023 Ricardo Huaman Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
 
       </div>
     </footer>
