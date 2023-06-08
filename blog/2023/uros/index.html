@@ -231,6 +231,8 @@
 <p>Additionally, microROS's reduced memory footprint makes it ideal for devices with limited resources. Whether you're a hobbyist or an experienced engineer, 
   by the end of this tutorial, you'll be equipped to leverage the power of microROS on your Raspberry Pi Pico. Let's get started!</p>
 
+<p>In this tutorial I'm assumming you're working with the regular Pico without Wi-Fi support and you have ROS2 installed on your computer.</p>
+
 <hr>
 
 <h2 id="Setting up the Environment">Setting up the Environment</h2>
@@ -240,7 +242,19 @@
 <figure class="highlight">
   <pre>
       <code class="language-shell" data-lang="shell">
-        sudo apt install cmake g++ gcc-arm-none-eabi doxygen libnewlib-arm-none-eabi git python3 build-essential
+sudo apt install cmake g++ gcc-arm-none-eabi doxygen libnewlib-arm-none-eabi git python3 build-essential
+      </code>
+  </pre>
+</figure>
+
+<p>Let's configure the environment:</p>
+
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+echo "export PICO_TOOLCHAIN_PATH=..." >> ~/.bashrc
+echo "export PICO_SDK_PATH=$HOME/micro_ros_ws/src/pico-sdk" >> ~/.bashrc
+source ~/.bashrc
       </code>
   </pre>
 </figure>
@@ -255,8 +269,36 @@ However, we consider it good style to mention author last names if you discuss s
 
 <h2 id="Pico-SDK and microROS">Pico-SDK and microROS</h2>
 
-<p>Just wrap the text you would like to show up in a footnote in a <code class="language-plaintext highlighter-rouge">&lt;d-footnote&gt;</code> tag.
-The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote></p>
+<p>Let's create the folder where we are going to clone the repositories:</p>
+
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+mkdir -p ~/micro_ros_ws/src
+cd ~/micro_ros_ws/src
+      </code>
+  </pre>
+</figure>
+
+<p>Let's install the Raspberry Pi Pico SDK:</p>
+
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+git clone --recurse-submodules https://github.com/raspberrypi/pico-sdk.git
+      </code>
+  </pre>
+</figure>
+
+<p>Let's clone the microROS repository with example demos:</p>
+
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+git clone https://github.com/Rotvie/micro_ros_raspberrypi_pico_sdk.git
+      </code>
+  </pre>
+</figure>
 
 
 <hr>
