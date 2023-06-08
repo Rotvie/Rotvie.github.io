@@ -214,14 +214,13 @@
             <div><a href="#Introduction">Introduction</a></div>
             <div><a href="#Setting up the Environment">Setting up the Environment</a></div>
             <div><a href="#Pico-SDK and microROS">Pico-SDK and microROS</a></div>
-            <div><a href="#code-blocks">Code Blocks</a></div>
             <div><a href="#layouts">Layouts</a></div>
             <div><a href="#other-typography">Other Typography?</a></div>
             
           </nav>
         </d-contents>
 
-        <h2 id="Introduction">Introduction</h2>
+<h2 id="Introduction">Introduction</h2>
 
 <p>In the rapidly evolving world of robotics and embedded systems, microROS is a game-changer. It brings the capabilities of ROS (Robot Operating System) 2 to microcontrollers, 
   facilitating the development of robust and interactive systems. The Raspberry Pi Pico, with its powerful RP2040 chip, provides an excellent platform for such applications.</p> 
@@ -236,9 +235,15 @@
 
 <h2 id="Setting up the Environment">Setting up the Environment</h2>
 
-<p>Citations are then used in the article body with the <code class="language-plaintext highlighter-rouge">&lt;d-cite&gt;</code> tag.
-The key attribute is a reference to the id provided in the bibliography.
-The key attribute can take multiple ids, separated by commas.</p>
+<p>Let's install the dependencies:</p>
+
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+        sudo apt install cmake g++ gcc-arm-none-eabi doxygen libnewlib-arm-none-eabi git python3 build-essential
+      </code>
+  </pre>
+</figure>
 
 <p>The citation is presented inline like this: <d-cite key="gregor2015draw"></d-cite> (a number that displays more information on hover).
 If you have an appendix, a bibliography is automatically created and populated in it.</p>
@@ -253,40 +258,6 @@ However, we consider it good style to mention author last names if you discuss s
 <p>Just wrap the text you would like to show up in a footnote in a <code class="language-plaintext highlighter-rouge">&lt;d-footnote&gt;</code> tag.
 The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote></p>
 
-<hr>
-
-<h2 id="code-blocks">Code Blocks</h2>
-
-<p>Syntax highlighting is provided within <code class="language-plaintext highlighter-rouge">&lt;d-code&gt;</code> tags.
-An example of inline code snippets: <code class="language-plaintext highlighter-rouge">&lt;d-code language="html"&gt;let x = 10;&lt;/d-code&gt;</code>.
-For larger blocks of code, add a <code class="language-plaintext highlighter-rouge">block</code> attribute:</p>
-
-<d-code block="" language="javascript">
-  var x = 25;
-  function(x) {
-    return x * x;
-  }
-</d-code>
-
-<p><strong>Note:</strong> <code class="language-plaintext highlighter-rouge">&lt;d-code&gt;</code> blocks do not look good in the dark mode.
-You can always use the default code-highlight using the <code class="language-plaintext highlighter-rouge">highlight</code> liquid tag:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
-<span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
-
-<hr>
-
-
-
-<h2 id="details-boxes">Details boxes</h2>
-
-<p>Details boxes are collapsible boxes which hide additional information from the user. They can be added with the <code class="language-plaintext highlighter-rouge">details</code> liquid tag:</p>
-
-<details><summary>Click here to know more</summary>
-<p>Additional details, where math \(2x - 1\) and <code class="language-plaintext highlighter-rouge">code</code> is rendered correctly.</p>
-</details>
 
 <hr>
 
