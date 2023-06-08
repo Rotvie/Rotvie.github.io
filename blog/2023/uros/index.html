@@ -215,7 +215,7 @@
             <div><a href="#Setting up the Environment">Setting up the Environment</a></div>
             <div><a href="#Pico-SDK and microROS">Pico-SDK and microROS</a></div>
             <div><a href="#Compilation and Loading">Compilation and Loading</a></div>
-            <div><a href="#other-typography">Other Typography?</a></div>
+            <div><a href="#Configuring the microROS agent">Configuring the microROS agent</a></div>
             
           </nav>
         </d-contents>
@@ -317,153 +317,32 @@ make
       </code>
   </pre>
 </figure>
-<p>Once it has finished compiling, inside the build folder we're going to find the uf2 file.</p>
+<p>Once it has finished compiling, you will find the uf2 file inside the build folder.</p>
+<p>Now, proceed by pressing and holding the BOOTSEL button on the Pico while connecting it to your computer using a USB cable. 
+The device should be recognized as a USB drive. </p>
+<p>If everything is going well, we can copy the uf2 file to the Pico either through a GUI or by using the following command:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+cp build/pico_micro_ros_example.uf2 /media/$USER/RPI-RP2
+      </code>
+  </pre>
+</figure>
 
 <hr>
 
-<h2 id="other-typography">Other Typography?</h2>
+<h2 id="Configuring the microROS agent">Configuring the microROS agent</h2>
 
-<p>Emphasis, aka italics, with <em>asterisks</em> (<code class="language-plaintext highlighter-rouge">*asterisks*</code>) or <em>underscores</em> (<code class="language-plaintext highlighter-rouge">_underscores_</code>).</p>
-
-<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
-
-<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
-
-<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
-
-<ol>
-  <li>First ordered list item</li>
-  <li>Another item
-⋅⋅* Unordered sub-list.</li>
-  <li>Actual numbers don’t matter, just that it’s a number
-⋅⋅1. Ordered sub-list</li>
-  <li>And another item.</li>
-</ol>
-
-<p>⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we’ll use three here to also align the raw Markdown).</p>
-
-<p>⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
-
-<ul>
-  <li>Unordered list can use asterisks</li>
-  <li>Or minuses</li>
-  <li>Or pluses</li>
-</ul>
-
-<p><a href="https://www.google.com" rel="external nofollow noopener" target="_blank">I’m an inline-style link</a></p>
-
-<p><a href="https://www.google.com" title="Google's Homepage" rel="external nofollow noopener" target="_blank">I’m an inline-style link with title</a></p>
-
-<p><a href="https://www.mozilla.org" rel="external nofollow noopener" target="_blank">I’m a reference-style link</a></p>
-
-<p><a href="../blob/master/LICENSE">I’m a relative reference to a repository file</a></p>
-
-<p><a href="http://slashdot.org" rel="external nofollow noopener" target="_blank">You can use numbers for reference-style link definitions</a></p>
-
-<p>Or leave it empty and use the <a href="http://www.reddit.com" rel="external nofollow noopener" target="_blank">link text itself</a>.</p>
-
-<p>URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or <a href="http://www.example.com" rel="external nofollow noopener" target="_blank">http://www.example.com</a> and sometimes
-example.com (but not on Github, for example).</p>
-
-<p>Some text to show that the reference links can follow later.</p>
-
-<p>Here’s our logo (hover to see the title text):</p>
-
-<p>Inline-style:
-<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"></p>
-
-<p>Reference-style:
-<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
-
-<p>Inline <code class="language-plaintext highlighter-rouge">code</code> has <code class="language-plaintext highlighter-rouge">back-ticks around</code> it.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JavaScript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
-<span class="nf">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
-</code></pre></div></div>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Python syntax highlighting</span><span class="sh">"</span>
-<span class="k">print</span> <span class="n">s</span>
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No language indicated, so no syntax highlighting.
-But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
-</code></pre></div></div>
-
-<p>Colons can be used to align columns.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Tables</th>
-      <th style="text-align: center">Are</th>
-      <th style="text-align: right">Cool</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>col 3 is</td>
-      <td style="text-align: center">right-aligned</td>
-      <td style="text-align: right">$1600</td>
-    </tr>
-    <tr>
-      <td>col 2 is</td>
-      <td style="text-align: center">centered</td>
-      <td style="text-align: right">$12</td>
-    </tr>
-    <tr>
-      <td>zebra stripes</td>
-      <td style="text-align: center">are neat</td>
-      <td style="text-align: right">$1</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don’t need to make the
-raw Markdown line up prettily. You can also use inline Markdown.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Markdown</th>
-      <th>Less</th>
-      <th>Pretty</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><em>Still</em></td>
-      <td><code class="language-plaintext highlighter-rouge">renders</code></td>
-      <td><strong>nicely</strong></td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
-
-<blockquote>
-  <p>Blockquotes are very handy in email to emulate reply text.
-This line is part of the same quote.</p>
-</blockquote>
-
-<p>Quote break.</p>
-
-<blockquote>
-  <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
-</blockquote>
-
-<p>Here’s a line for us to start with.</p>
-
-<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
-
-<p>This line is also a separate paragraph, but…
-This line is only separated by a single newline, so it’s a separate line in the <em>same paragraph</em>.</p>
+<p>Let's install the microROS agent snap and configure it:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+sudo snap install micro-ros-agent
+sudo snap set core experimental.hotplug=true
+sudo systemctl restart snapd
+      </code>
+  </pre>
+</figure>
 
       </d-article>
 
