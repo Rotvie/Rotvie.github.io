@@ -351,6 +351,18 @@ snap interface serial-port
   </pre>
 </figure>
 <p>We should see:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+name:    serial-port
+summary: allows accessing a specific serial port
+plugs:
+  - micro-ros-agent
+slots:
+  - snapd:pico (allows accessing a specific serial port)
+      </code>
+  </pre>
+</figure>
 
 <p>Now we connect the agent to the specific slot:</p>
 <figure class="highlight">
@@ -372,7 +384,20 @@ sudo micro-ros-agent serial --dev /dev/ttyACM0 baudrate=115200
       </code>
   </pre>
 </figure>
-
+<p>The Pico's LED should light up and the terminal should show the following:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+[1660569056.713593] info     | TermiosAgentLinux.cpp | init                     | running...             | fd: 3
+[1660569057.217852] info     | Root.cpp           | create_client            | create                 | client_key: 0x28B733E9, session_id: 0x81
+[1660569057.218006] info     | SessionManager.hpp | establish_session        | session established    | client_key: 0x28B733E9, address: 0
+[1660569057.272859] info     | ProxyClient.cpp    | create_participant       | participant created    | client_key: 0x28B733E9, participant_id: 0x000(1)
+[1660569057.277002] info     | ProxyClient.cpp    | create_topic             | topic created          | client_key: 0x28B733E9, topic_id: 0x000(2), participant_id: 0x000(1)
+[1660569057.279417] info     | ProxyClient.cpp    | create_publisher         | publisher created      | client_key: 0x28B733E9, publisher_id: 0x000(3), participant_id: 0x000(1)
+[1660569057.281894] info     | ProxyClient.cpp    | create_datawriter        | datawriter created     | client_key: 0x28B733E9, datawriter_id: 0x000(5), publisher_id: 0x000(3)
+      </code>
+  </pre>
+</figure>
 <p>Let's confirm it's working by displaying the available topics:</p>
 <figure class="highlight">
   <pre>
@@ -381,6 +406,9 @@ ros2 topic list
       </code>
   </pre>
 </figure>
+<p>We should see:</p>
+<p><strong>Note:</strong> If we want to run another microROS example demo, just </p>
+
 <hr>
 
 <h2 id="What if I want to use a Raspberry Pi instead of a PC?">What if I want to use a Raspberry Pi instead of a PC?</h2>
