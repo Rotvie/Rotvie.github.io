@@ -342,18 +342,45 @@ sudo systemctl restart snapd
   </pre>
 </figure>
 
-<p>The Pico is connected to the computer, so it should show the following:</p>
-
+<p>The Pico is connected to the computer, so if we run:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+snap interface serial-port
+      </code>
+  </pre>
+</figure>
+<p>We should see:</p>
 
 <p>Now we connect the agent to the specific slot:</p>
-
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+snap connect micro-ros-agent:serial-port snapd:pico
+      </code>
+  </pre>
+</figure>
 <hr>
 
 <h2 id="Running the microROS example demo">Running the microROS example demo</h2>
 <p>Let's run the following command to start the microROS node:</p>
 
-<p>Let's confirm it's working by displaying the available topics:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+sudo micro-ros-agent serial --dev /dev/ttyACM0 baudrate=115200
+      </code>
+  </pre>
+</figure>
 
+<p>Let's confirm it's working by displaying the available topics:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+ros2 topic list
+      </code>
+  </pre>
+</figure>
 <hr>
 
 <h2 id="What if I want to use a Raspberry Pi instead of a PC?">What if I want to use a Raspberry Pi instead of a PC?</h2>
