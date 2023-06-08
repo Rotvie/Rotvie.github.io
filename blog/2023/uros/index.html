@@ -214,7 +214,7 @@
             <div><a href="#Introduction">Introduction</a></div>
             <div><a href="#Setting up the Environment">Setting up the Environment</a></div>
             <div><a href="#Pico-SDK and microROS">Pico-SDK and microROS</a></div>
-            <div><a href="#layouts">Layouts</a></div>
+            <div><a href="#Compilation and Loading">Compilation and Loading</a></div>
             <div><a href="#other-typography">Other Typography?</a></div>
             
           </nav>
@@ -303,49 +303,21 @@ git clone https://github.com/Rotvie/micro_ros_raspberrypi_pico_sdk.git
 
 <hr>
 
-<h2 id="layouts">Layouts</h2>
+<h2 id="Compilation and Loading">Compilation and Loading</h2>
 
-<p>The main text column is referred to as the body.
-It is the assumed layout of any direct descendants of the <code class="language-plaintext highlighter-rouge">d-article</code> element.</p>
-
-<div class="fake-img l-body">
-  <p>.l-body</p>
-</div>
-
-<p>For images you want to display a little larger, try <code class="language-plaintext highlighter-rouge">.l-page</code>:</p>
-
-<div class="fake-img l-page">
-  <p>.l-page</p>
-</div>
-
-<p>All of these have an outset variant if you want to poke out from the body text a little bit.
-For instance:</p>
-
-<div class="fake-img l-body-outset">
-  <p>.l-body-outset</p>
-</div>
-
-<div class="fake-img l-page-outset">
-  <p>.l-page-outset</p>
-</div>
-
-<p>Occasionally you’ll want to use the full browser width.
-For this, use <code class="language-plaintext highlighter-rouge">.l-screen</code>.
-You can also inset the element a little from the edge of the browser by using the inset variant.</p>
-
-<div class="fake-img l-screen">
-  <p>.l-screen</p>
-</div>
-<div class="fake-img l-screen-inset">
-  <p>.l-screen-inset</p>
-</div>
-
-<p>The final layout is for marginalia, asides, and footnotes.
-It does not interrupt the normal flow of <code class="language-plaintext highlighter-rouge">.l-body</code> sized text except on mobile screen sizes.</p>
-
-<div class="fake-img l-gutter">
-  <p>.l-gutter</p>
-</div>
+<p>Now we have to compile the microROS code in order to create an uf2 file. This uf2 file is the one that we are going load into the Raspberry Pi Pico.</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+cd micro_ros_raspberrypi_pico_sdk
+mkdir build
+cd build
+cmake ..
+make
+      </code>
+  </pre>
+</figure>
+<p>Once it has finished compiling, inside the build folder we're going to find the uf2 file.</p>
 
 <hr>
 
