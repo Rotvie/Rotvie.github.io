@@ -217,7 +217,7 @@
             <div><a href="#Compilation and Loading">Compilation and Loading</a></div>
             <div><a href="#Configuring the microROS agent">Configuring the microROS agent</a></div>
             <div><a href="#Running the microROS example demo">Running the microROS example demo</a></div>
-            <div><a href="#What if I want to use a Raspberry Pi instead of a PC?">What if I want to use a Raspberry Pi instead of a PC?</a></div>
+            <div><a href="#What if I want to connect the Pico with a Raspberry Pi instead of a PC?">What if I want to connect the Pico with a Raspberry Pi instead of a PC?</a></div>
 
           </nav>
         </d-contents>
@@ -407,6 +407,16 @@ ros2 topic list
   </pre>
 </figure>
 <p>We should see:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">
+/parameter_events
+/pico_publisher
+/rosout
+      </code>
+  </pre>
+</figure>
+
 <p><strong>Note:</strong> If you want to run another microROS example demo: open the examples folder, rename the c file you want to compile to 
 pico_micro_ros_example.c and replace the original pico_micro_ros_example.c located in micro_ros_raspberrypi_pico_sdk with this new one. Now 
 delete the build folder and repeat the steps from the <a href="#Compilation and Loading">Compilation and Loading</a> section.</p>
