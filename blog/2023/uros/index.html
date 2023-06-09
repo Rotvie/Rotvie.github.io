@@ -447,6 +447,24 @@ source install/local_setup.bash
       </code>
   </pre>
 </figure>
+<p>Now, we can build the microROS Agent by running the following commands:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell"> 
+ros2 run micro_ros_setup create_agent_ws.sh
+ros2 run micro_ros_setup build_agent.sh
+source install/local_setup.sh
+      </code>
+  </pre>
+</figure>
+<p>And that's it, now we can run the microROS Agent again:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell"> 
+ros2 run micro_ros_agent micro_ros_agent --dev /dev/ttyACM0 baudrate=115200
+      </code>
+  </pre>
+</figure>
 
       </d-article>
 
