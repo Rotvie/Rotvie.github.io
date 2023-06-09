@@ -424,7 +424,15 @@ delete the build folder and repeat the steps from the <a href="#Compilation and 
 <hr>
 
 <h2 id="What if I want to connect the Pico with a Raspberry Pi instead of a PC?">What if I want to connect the Pico with a Raspberry Pi instead of a PC?</h2>
-<p>COMING SOON</p>
+<p>For a Raspberry Pi, the process should be the same up until the <a href="#Configuring-the-microROS-agent">Configuring the microROS agent</a> section. 
+  When you try to install the micro-ros-agent via snap, you may encounter the following error:</p>
+<figure class="highlight">
+  <pre>
+      <code class="language-shell" data-lang="shell">        
+error: snap "micro-ros-agent" is not available on stable for this architecture (arm64) but exists on other architectures (amd64).
+      </code>
+  </pre>
+</figure>
 
       </d-article>
 
@@ -433,7 +441,7 @@ delete the build folder and repeat the steps from the <a href="#Compilation and 
         <d-citation-list></d-citation-list>
       </d-appendix>
 
-      <d-bibliography src="/assets/bibliography/2023-06-08.bib"></d-bibliography><div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
+      <d-bibliography src="/assets/bibliography/uros.bib"></d-bibliography><div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
   <script>
     let giscusTheme = localStorage.getItem("theme");
     let giscusAttributes = {
