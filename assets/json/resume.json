@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Ricardo Huaman",
+    "label": "Researcher",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "rotvie@gmail.com",
+    "phone": "",
+    "url": "https://rotvie.github.io/",
+    "summary": "Electronic Engineer with a strong interest in Robotics and AI.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -17,8 +17,8 @@
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "rotvie",
+        "url": "https://twitter.com/rotvie"
       }
     ]
   },
@@ -151,13 +151,18 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Spanish",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
       "language": "English",
       "fluency": "Fluent",
+      "icon": ""
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Advanced",
       "icon": ""
     }
   ],
