@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[I participated as a volunteer member of the staff at Science Clubs Peru!](https://www.linkedin.com/company/clubesdecienciaperu/posts/?feedView=all)
+[I participated as a volunteer member of the staff at Science Clubs Peru!](https://www.linkedin.com/company/clubesdecienciaperu/)

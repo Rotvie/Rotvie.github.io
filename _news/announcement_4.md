@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[I won 2nd and 3rd place in research competitions at CONEIMERA 2023!](https://www.linkedin.com/posts/ricardo-jesus-huaman-kemper_coneimera2023-upao-labinm-activity-7098736836918829056-GBF6/?utm_source=share&utm_medium=member_desktop)
+I won 2nd and 3rd place in research competitions at CONEIMERA 2023!

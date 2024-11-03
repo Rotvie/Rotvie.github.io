@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[I was selected for the REPUcs 2024 program!](https://twitter.com/REPUProgram/status/1731398936756150776)
+I was selected for the REPUcs 2024 program!
