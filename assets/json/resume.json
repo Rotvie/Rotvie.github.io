@@ -45,9 +45,7 @@
       "startDate": "2024-01-01",
       "endDate": "2024-04-01",
       "summary": "Led a project to integrate foundational models with robotics to enhance human-robot interaction.",
-      "highlights": [
-        "Developed pipelines to improve robots’ responsiveness in various settings using NLP techniques."
-      ]
+      "highlights": ["Developed pipelines to improve robots’ responsiveness in various settings using NLP techniques."]
     },
     {
       "name": "Universidad Privada Antenor Orrego",
@@ -78,7 +76,7 @@
       "studyType": "Bachelor's",
       "startDate": "2017-07-01",
       "endDate": "2022-07-01",
-      "score": "1st"    
+      "score": "1st"
     }
   ],
   "publications": [
@@ -113,17 +111,13 @@
       "name": "Programming",
       "level": "Advanced",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Python", "C++", "PyTorch", "TensorFlow", "Docker", "Kubernetes", "Bash Scripting", "Linux", "Git", "AWS", "Azure"
-      ]
+      "keywords": ["Python", "C++", "PyTorch", "TensorFlow", "Docker", "Kubernetes", "Bash Scripting", "Linux", "Git", "AWS", "Azure"]
     },
     {
       "name": "Agile",
       "level": "Intermediate",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Agile methodologies", "Project Management"
-      ]
+      "keywords": ["Agile methodologies", "Project Management"]
     }
   ],
   "languages": [
