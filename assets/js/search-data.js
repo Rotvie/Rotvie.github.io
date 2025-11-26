@@ -83,6 +83,17 @@ ninja.data = [{
             window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
           
         },
+      },{id: "post-setting-up-and-running-microros-on-the-raspberry-pi-pico",
+        
+          title: "Setting Up and Running microROS on the Raspberry Pi Pico",
+        
+        description: "A tutorial on how to get microROS and ROS2 working together",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/uros/";
+          
+        },
       },{id: "post-a-distill-style-blog-post",
         
           title: "a distill-style blog post",
