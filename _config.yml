@@ -54,7 +54,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 960px
+max_width: 930px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -188,6 +188,8 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _pages/teaching.md
+  - _pages/profiles.md
   - purgecss.config.js
   - README.md
   - readme_preview/

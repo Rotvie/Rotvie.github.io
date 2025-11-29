@@ -40,11 +40,19 @@
   "work": [
     {
       "name": "Banco de Crédito del Perú",
-      "position": "Machine Learning Engineerm, Center of Excellence",
+      "position": "Machine Learning Engineer, Center of Excellence",
       "url": "https://www.viabcp.com/",
       "startDate": "2025-10-01",
       "endDate": "Present",
       "summary": "Developed and maintained pipelines for the bank's internal systems."
+    },
+    {
+      "name": "IP Noticias LATAM",
+      "position": "Artificial Intelligence Engineer",
+      "url": "https://ipnoticias-latam.com/",
+      "startDate": "2024-05-01",
+      "endDate": "2025-09-01",
+      "summary": "Developed and led the implementation of AI-based solutions for large-scale media monitoring and content analysis."
     },
     {
       "name": "Cardiff University",
