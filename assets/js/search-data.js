@@ -88,16 +88,20 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-our-robotics-work-was-spotlighted-at-innovation-week-2023",
+          title: 'Our robotics work was spotlighted at Innovation Week 2023!',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-i-won-2nd-and-3rd-place-in-research-competitions-at-coneimera-2023",
+          title: 'I won 2nd and 3rd place in research competitions at CONEIMERA 2023!',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-two-of-our-research-posters-have-been-accepted-for-presentation-at-iros-2023",
+          title: 'Two of our research posters have been accepted for presentation at IROS 2023!...',
+          description: "",
+          section: "News",},{id: "news-i-was-selected-for-the-repucs-2024-program",
+          title: 'I was selected for the REPUcs 2024 program!',
+          description: "",
+          section: "News",},{id: "news-i-participated-as-a-volunteer-member-of-the-staff-at-science-clubs-peru",
+          title: 'I participated as a volunteer member of the staff at Science Clubs Peru!...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -109,7 +113,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/example_pdf.pdf", "_blank");
+          window.open("/assets/pdf/cv.pdf", "_blank");
         },
       },{
         id: 'social-email',
@@ -126,18 +130,11 @@ ninja.data = [{
           window.open("https://github.com/Rotvie", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
+          window.open("https://www.linkedin.com/in/ricardo-jesus-huaman-kemper", "_blank");
         },
       },{
         id: 'social-scholar',
@@ -159,13 +156,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://youtube.com/@rotvieofficial", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
