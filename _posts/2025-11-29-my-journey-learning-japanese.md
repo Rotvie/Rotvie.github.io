@@ -10,6 +10,8 @@ featured: true
 authors:
   - name: Ricardo Huaman
     url: "https://rotvie.github.io/"
+    affiliations:
+      name: Independent
 
 toc:
   - name: My Childhood
