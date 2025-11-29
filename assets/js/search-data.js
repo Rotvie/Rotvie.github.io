@@ -58,7 +58,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-setting-up-and-running-microros-on-the-raspberry-pi-pico",
+            },{id: "post-my-journey-learning-japanese",
+        
+          title: "My Journey Learning Japanese",
+        
+        description: "My personal journey learning Japanese",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/my-journey-learning-japanese/";
+          
+        },
+      },{id: "post-setting-up-and-running-microros-on-the-raspberry-pi-pico",
         
           title: "Setting Up and Running microROS on the Raspberry Pi Pico",
         
