@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2025-12-22'
+  last_updated: '2026-01-09'
 papers:
   CdEd4TQAAAAJ:2osOgNQ5qMEC:
     citations: 1
@@ -10,7 +10,7 @@ papers:
     title: Artificial vision strategy for Ripeness assessment of blueberries on images taken during pre-harvest stage in agroindustrial environments using deep learning techniques
     year: '2023'
   CdEd4TQAAAAJ:d1gkVwhDpl0C:
-    citations: 2
+    citations: 3
     title: Linear Quadratic Regulator (LQR) Control for the Active Suspension System of a Four-Wheeled Agricultural Robot
     year: '2023'
   CdEd4TQAAAAJ:qjMakFHDy7sC:
