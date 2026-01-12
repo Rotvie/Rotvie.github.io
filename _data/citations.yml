@@ -1,16 +1,16 @@
 metadata:
-  last_updated: '2026-01-09'
+  last_updated: '2026-01-12'
 papers:
   CdEd4TQAAAAJ:2osOgNQ5qMEC:
     citations: 1
     title: Performance evaluation of the ROS navigation stack using LeGO-LOAM
     year: '2023'
   CdEd4TQAAAAJ:9yKSN-GCB0IC:
-    citations: 4
+    citations: 5
     title: Artificial vision strategy for Ripeness assessment of blueberries on images taken during pre-harvest stage in agroindustrial environments using deep learning techniques
     year: '2023'
   CdEd4TQAAAAJ:d1gkVwhDpl0C:
-    citations: 3
+    citations: 4
     title: Linear Quadratic Regulator (LQR) Control for the Active Suspension System of a Four-Wheeled Agricultural Robot
     year: '2023'
   CdEd4TQAAAAJ:qjMakFHDy7sC:
