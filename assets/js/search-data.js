@@ -93,9 +93,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-participated-as-a-volunteer-member-of-the-staff-at-science-clubs-peru",
           title: 'I participated as a volunteer member of the staff at Science Clubs Peru!...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-autonomous-agricultural-robot-labinm",
+          title: 'Autonomous Agricultural Robot LABINM',
+          description: "Self-localizing robotic system with mapping and AI capabilities for crop monitoring (FONDECYT 171-2020)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{
