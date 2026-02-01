@@ -98,6 +98,11 @@ ninja.data = [{
           description: "Self-localizing robotic system with mapping and AI capabilities for crop monitoring (FONDECYT 171-2020)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-blueberry-segmentation-and-ripeness-assessment",
+          title: 'Blueberry Segmentation and Ripeness Assessment',
+          description: "Deep learning-based detection and classification of blueberries for pre-harvest ripeness assessment (FONDECYT 171-2020)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
