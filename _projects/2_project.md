@@ -36,10 +36,9 @@ Peru has become a major contributor to the international blueberry market, expor
 </div>
 
 <div class="caption">
-    Left: Automated detection and ripeness classification pipeline (ZED 2i → YOLOv8 → DINOv2 embeddings → MLP classifier).  
+    Left: Automated detection and ripeness classification pipeline (ZED 2i → YOLOv8 → DINOv2 embeddings → MLP classifier).
     Right: Manual blueberry sampling in the field, highlighting labor intensity and scalability limitations.
 </div>
-
 
 ---
 

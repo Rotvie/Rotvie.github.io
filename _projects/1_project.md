@@ -26,7 +26,9 @@ The project addressed a critical challenge in blueberry pre-harvest operations: 
     </div>
 </div>
 <div class="caption">
-    Left: The LABINM mobile robot designed for agricultural environments. Center: Blueberry cultivation in Trujillo, Peru with sandy, uneven terrain. Right: Simulated blueberry farm environment in Gazebo.
+    Left: The LABINM mobile robot designed for agricultural environments.
+    Center: Blueberry cultivation in Trujillo, Peru with sandy, uneven terrain.
+    Right: Simulated blueberry farm environment in Gazebo.
 </div>
 
 ---
@@ -88,7 +90,8 @@ This is a demo of the navigation system in action.
     </div>
 </div>
 <div class="caption">
-    Left: Overview of the LABINM robot's autonomous navigation capabilities in agricultural environments. Right: Complementary video for the Workshop on Robotics in Agriculture (WRIA) at IEEE/RSJ IROS 2023.
+    Left: Overview of the LABINM robot's autonomous navigation capabilities in agricultural environments.
+    Right: Complementary video for the Workshop on Robotics in Agriculture (WRIA) at IEEE/RSJ IROS 2023.
 </div>
 
 ---
