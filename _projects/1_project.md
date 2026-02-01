@@ -55,6 +55,7 @@ The following figure shows the robot model in the Gazebo simulator showing the d
 <div class="caption">
     Virtual robot model in Gazebo simulator.
 </div>
+
 ---
 
 ## Navigation System Architecture
