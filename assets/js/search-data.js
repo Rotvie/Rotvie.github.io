@@ -153,7 +153,7 @@ ninja.data = [{
         title: 'YouTube',
         section: 'Socials',
         handler: () => {
-          window.open("https://youtube.com/@rotvieofficial", "_blank");
+          window.open("https://youtube.com/@rotvielabs", "_blank");
         },
       },{
       id: 'light-theme',
