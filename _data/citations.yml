@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-01-12'
+  last_updated: '2026-02-04'
 papers:
   CdEd4TQAAAAJ:2osOgNQ5qMEC:
     citations: 1
@@ -9,6 +9,10 @@ papers:
     citations: 5
     title: Artificial vision strategy for Ripeness assessment of blueberries on images taken during pre-harvest stage in agroindustrial environments using deep learning techniques
     year: '2023'
+  CdEd4TQAAAAJ:UeHWp8X0CEIC:
+    citations: 0
+    title: Performance Evaluation of Detection and Tracking Algorithms for Automated Grape Cluster Counting
+    year: '2025'
   CdEd4TQAAAAJ:d1gkVwhDpl0C:
     citations: 4
     title: Linear Quadratic Regulator (LQR) Control for the Active Suspension System of a Four-Wheeled Agricultural Robot
@@ -22,6 +26,6 @@ papers:
     title: Deep Learning-based Segmentation and Classification System for Artichoke Seedling Grading
     year: '2023'
   CdEd4TQAAAAJ:u5HHmVD_uO8C:
-    citations: 4
+    citations: 5
     title: Autonomous navigation of a four-wheeled robot in a simulated blueberry farm environment
     year: '2022'
