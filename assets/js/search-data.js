@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-my-journey-learning-japanese",
+            },{id: "post-langevin-sampling-for-diffusion-models",
+        
+          title: "Langevin Sampling for Diffusion Models",
+        
+        description: "An overview of Langevin Sampling for Diffusion Models",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/langevin-sampling-for-diffusion/";
+          
+        },
+      },{id: "post-my-journey-learning-japanese",
         
           title: "My Journey Learning Japanese",
         
