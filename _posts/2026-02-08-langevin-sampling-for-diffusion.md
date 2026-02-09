@@ -14,7 +14,6 @@ authors:
       name: Independent
 
 bibliography: langevin-sampling-for-diffusion.bib
-
 ---
 
 ## Langevin Sampling for Diffusion Models
@@ -23,7 +22,7 @@ There are many resources on the internet that explain diffusion models as a nois
 
 ## Assigning Probability Values to Images
 
-Imagine a black box called the *image distribution*. This box gives us samples from an underlying distribution — that is, images of all kinds.
+Imagine a black box called the _image distribution_. This box gives us samples from an underlying distribution — that is, images of all kinds.
 
 These images have intrinsic likelihoods, similar to the rolling dice case. An image of a koala and an image of a tiger could have similar probabilities, while a noisy image would have much less likelihood:
 
@@ -31,7 +30,7 @@ $$
 p(\text{Koala}) \approx p(\text{Tiger}) > p(\text{Noise})
 $$
 
-With this in mind, all we need to do is generate samples from this image distribution, right? But first, we need to understand how to generate samples from *any* distribution using a computer. Let's start with a simpler case: how do we generate samples from a dice-rolling distribution?
+With this in mind, all we need to do is generate samples from this image distribution, right? But first, we need to understand how to generate samples from _any_ distribution using a computer. Let's start with a simpler case: how do we generate samples from a dice-rolling distribution?
 
 ## Challenges in Sampling from Probability Distributions
 
@@ -58,9 +57,9 @@ $$
 \end{align*}
 $$
 
-Interesting — although both of these are uniform distributions, so the trick feels a bit circular. However, there's another distribution that, if we could sample from it, would allow us to sample from *almost any* other distribution.
+Interesting — although both of these are uniform distributions, so the trick feels a bit circular. However, there's another distribution that, if we could sample from it, would allow us to sample from _almost any_ other distribution.
 
-## The Probability Density Function with Two Peaks 
+## The Probability Density Function with Two Peaks
 
 Let's assume we have a PDF called $p_{\text{twopeaks}}(x)$ — a distribution with two distinct peaks.
 
@@ -102,7 +101,7 @@ $$
     Langevin Sampling algorithm: iteratively applying gradient-based updates with Gaussian noise to generate samples from a target distribution.
 </div>
 
-The Langevin Sampling algorithm is described in the image above. One iteration in the loop is called a *Langevin Update*. We iterate thousands of times (say 1,000) to generate a single sample. Then we repeat this entire process many times to build up a histogram that approximates the target distribution.
+The Langevin Sampling algorithm is described in the image above. One iteration in the loop is called a _Langevin Update_. We iterate thousands of times (say 1,000) to generate a single sample. Then we repeat this entire process many times to build up a histogram that approximates the target distribution.
 
 It's important that we add Gaussian noise at each iteration to prevent the sample from collapsing onto the peak itself. The randomness is essential — it keeps the deterministic gradient ascent from getting stuck.
 
@@ -181,7 +180,7 @@ F_{\text{images}}(\mathbf{x}) &= \nabla_{\mathbf{x}} \log p_{\text{images}}(\mat
 \end{align*}
 $$
 
-In the dice roll case, we *did* know the PDF of the uniform distribution, so we could compute $F$ by just reasoning about the sample space. But for images, the problem is much harder. However, there's one advantage we do have: a collection of millions of images from the internet — which are samples from this very PDF.
+In the dice roll case, we _did_ know the PDF of the uniform distribution, so we could compute $F$ by just reasoning about the sample space. But for images, the problem is much harder. However, there's one advantage we do have: a collection of millions of images from the internet — which are samples from this very PDF.
 
 ## Diffusion Models Estimate Unknown Score Functions from Existing Samples
 
@@ -200,7 +199,7 @@ Similarly to the $p_{\text{twopeaks}}(x)$ example, if we don't add noise during 
 
 The diffusion process and the noise can be seen as a two-person team: one logical, one creative. The work of both allows us to get realistic images. The purely logical component can't generate a realistic image on its own — it needs randomness.
 
-This is worth contrasting with Generative Adversarial Networks (GANs), which suffered from a problem known as *mode collapse*, where outputs became far less diverse than the true distribution.
+This is worth contrasting with Generative Adversarial Networks (GANs), which suffered from a problem known as _mode collapse_, where outputs became far less diverse than the true distribution.
 
 ## Parallels with Stochastic Gradient Descent
 
@@ -210,7 +209,7 @@ Stochastic Gradient Descent does something remarkably similar. Instead of findin
 
 There are a few important details I glossed over for the sake of clarity:
 
-- **Annealed Langevin Sampling**: The model actually learns the score of the *noised* distribution at each noise level. Why? Because if we were to start from a noise sample and try to follow the score of the true (un-noised) distribution, it would be too sparse — you'd get lost. Instead, we add noise to give the score function meaningful signal, and then gradually reduce the noise level, annealing from high to low noise during sampling.
+- **Annealed Langevin Sampling**: The model actually learns the score of the _noised_ distribution at each noise level. Why? Because if we were to start from a noise sample and try to follow the score of the true (un-noised) distribution, it would be too sparse — you'd get lost. Instead, we add noise to give the score function meaningful signal, and then gradually reduce the noise level, annealing from high to low noise during sampling.
 
 - **Noise prediction ≈ Score estimation**: During diffusion model training, the model learns to predict the added noise, and it's not immediately obvious how this connects to the score function. Proving this equivalence is a topic for another post, but the short version is that predicting the noise is mathematically equivalent to estimating the score.
 

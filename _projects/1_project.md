@@ -37,15 +37,15 @@ The project addressed a critical challenge in blueberry pre-harvest operations: 
 
 The LABINM robot was designed specifically for navigation in challenging agricultural terrain found in coastal agro-industrial fields of Peru and Chile. Key specifications include:
 
-| Component | Specification |
-|-----------|---------------|
-| **Drive System** | Skid Steering (4-wheel differential) |
-| **Wheel Diameter** | 33 cm |
-| **Dimensions** | 1.40m × 1.10m × 0.62m (L × W × H) |
-| **LiDAR Sensor** | Ouster OS1-32 (3D, 32-channel) |
-| **Compute Units** | NVIDIA Jetson + Raspberry Pi |
-| **Suspension** | Active suspension system |
-| **Motor Controllers** | ODrive |
+| Component             | Specification                        |
+| --------------------- | ------------------------------------ |
+| **Drive System**      | Skid Steering (4-wheel differential) |
+| **Wheel Diameter**    | 33 cm                                |
+| **Dimensions**        | 1.40m × 1.10m × 0.62m (L × W × H)    |
+| **LiDAR Sensor**      | Ouster OS1-32 (3D, 32-channel)       |
+| **Compute Units**     | NVIDIA Jetson + Raspberry Pi         |
+| **Suspension**        | Active suspension system             |
+| **Motor Controllers** | ODrive                               |
 
 The following figure shows the robot model in the Gazebo simulator showing the dimensions and the Ouster OS1-32 LiDAR mounted on top.
 
@@ -68,7 +68,7 @@ The autonomous navigation system was built on the **ROS Navigation Stack**, whil
 
 - **Mapping**: Gmapping (2D SLAM) and LeGO-LOAM (3D LiDAR Odometry)
 - **Localization**: Adaptive Monte Carlo Localization (AMCL), LeGO-LOAM, and Advanced Localization System (ALS)
-- **Global Planning**: A* algorithm
+- **Global Planning**: A\* algorithm
 - **Local Planning**: Dynamic Window Approach (DWA)
 
 ---
@@ -102,22 +102,22 @@ This project resulted in the following peer-reviewed publications:
 
 1. **Comparative Analysis of LiDAR Inertial Odometry Algorithms in Blueberry Crops** (2025)
    - R. Huaman, C. Gonzalez, and S. Prado
-   - *III International Congress on Technology and Innovation in Engineering and Computing*
+   - _III International Congress on Technology and Innovation in Engineering and Computing_
    - [DOI: 10.3390/engproc2025083009](https://doi.org/10.3390/engproc2025083009)
 
 2. **Performance Evaluation of the ROS Navigation Stack Using LeGO-LOAM** (2024)
    - R. Huaman, C. Gonzalez, and S. Prado
-   - *Proceedings of the 9th Brazilian Technology Symposium (BTSym'23)*, Springer
+   - _Proceedings of the 9th Brazilian Technology Symposium (BTSym'23)_, Springer
    - [DOI: 10.1007/978-3-031-66961-3_16](https://doi.org/10.1007/978-3-031-66961-3_16)
 
 3. **Linear Quadratic Regulator (LQR) Control for the Active Suspension System of a Four-Wheeled Agricultural Robot** (2023)
    - J. A. Bazan Quispe, R. J. Huaman Kemper, and S. R. Prado Gardini
-   - *IEEE XXX International Conference on Electronics, Electrical Engineering and Computing (INTERCON)*
+   - _IEEE XXX International Conference on Electronics, Electrical Engineering and Computing (INTERCON)_
    - [DOI: 10.1109/INTERCON59652.2023.10326049](https://doi.org/10.1109/INTERCON59652.2023.10326049)
 
 4. **Autonomous Navigation of a Four-Wheeled Robot in a Simulated Blueberry Farm Environment** (2022)
    - R. J. Huaman Kemper, C. Gonzalez, and S. R. Prado Gardini
-   - *IEEE ANDESCON 2022*, Barranquilla, Colombia
+   - _IEEE ANDESCON 2022_, Barranquilla, Colombia
    - [DOI: 10.1109/ANDESCON56260.2022.9989865](https://doi.org/10.1109/ANDESCON56260.2022.9989865)
 
 ---
@@ -126,7 +126,7 @@ This project resulted in the following peer-reviewed publications:
 
 - **Comparative Analysis of LiDAR Odometry Algorithms in Blueberry Crops** (2023)
   - C. A. Gonzalez, R. J. Huaman Kemper, and S. R. Prado Gardini
-  - *Workshop on Robotics in Agriculture: Present and Future of Agricultural Robotics and Technologies*
+  - _Workshop on Robotics in Agriculture: Present and Future of Agricultural Robotics and Technologies_
   - IEEE/RSJ IROS 2023, Detroit, USA
   - [Workshop Website](https://sites.google.com/view/agrobotics)
 

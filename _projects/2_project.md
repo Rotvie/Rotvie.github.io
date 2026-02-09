@@ -52,13 +52,13 @@ The system consists of two main modules:
 
 ### Ripeness Stages
 
-| Stage | Name | Description |
-|-------|------|-------------|
-| 1 | **Green** | Immature, fully green |
-| 2 | **Cream** | Early color change |
-| 3 | **Blush** | Intermediate ripeness |
-| 4 | **Pink** | Near-ripe |
-| 5 | **Blue** | Fully mature |
+| Stage | Name      | Description           |
+| ----- | --------- | --------------------- |
+| 1     | **Green** | Immature, fully green |
+| 2     | **Cream** | Early color change    |
+| 3     | **Blush** | Intermediate ripeness |
+| 4     | **Pink**  | Near-ripe             |
+| 5     | **Blue**  | Fully mature          |
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -105,7 +105,7 @@ The system achieved **93.70% classification accuracy** across five ripeness stag
 
 1. **Artificial Vision Strategy for Ripeness Assessment of Blueberries on Images Taken During Pre-harvest Stage in Agroindustrial Environments Using Deep Learning Techniques** (2023)
    - P. B. Cubas Muñoz, R. J. Huaman Kemper, and S. R. Prado Gardini
-   - *IEEE XXX International Conference on Electronics, Electrical Engineering and Computing (INTERCON)*
+   - _IEEE XXX International Conference on Electronics, Electrical Engineering and Computing (INTERCON)_
    - [DOI: 10.1109/INTERCON59652.2023.10326058](https://doi.org/10.1109/INTERCON59652.2023.10326058)
 
 ---
@@ -114,7 +114,7 @@ The system achieved **93.70% classification accuracy** across five ripeness stag
 
 - **Deep Learning Approach for Accurate Pre-Harvest Blueberry Ripeness Classification** (2023)
   - P. Cubas, R. J. Huaman Kemper, and S. R. Prado Gardini
-  - *Workshop on Robotics in Agriculture: Present and Future of Agricultural Robotics and Technologies*
+  - _Workshop on Robotics in Agriculture: Present and Future of Agricultural Robotics and Technologies_
   - IEEE/RSJ IROS 2023, Detroit, USA
   - [Workshop Website](https://sites.google.com/view/agrobotics)
 
