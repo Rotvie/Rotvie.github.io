@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-langevin-sampling-for-diffusion-models",
+            },{id: "post-the-multi-armed-bandit-problem",
+        
+          title: "The Multi-Armed Bandit Problem",
+        
+        description: "A visual walkthrough of exploration vs exploitation — from YouTube thumbnails to the algorithms behind smart experimentation",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/multi-armed-bandits/";
+          
+        },
+      },{id: "post-langevin-sampling-for-diffusion-models",
         
           title: "Langevin Sampling for Diffusion Models",
         
