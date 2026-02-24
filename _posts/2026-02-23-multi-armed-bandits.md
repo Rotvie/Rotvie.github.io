@@ -28,7 +28,7 @@ You've spent a week editing a video and it's ready to publish. But which thumbna
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mab-five-thumbnails.png" title="Five thumbnail candidates" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/multi-armed-bandits/mab-five-thumbnails.png" title="Five thumbnail candidates" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -49,7 +49,7 @@ A bandit algorithm starts by exploring all thumbnails, but as it gathers evidenc
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mab-ab-vs-bandit-allocation.png" title="A/B test vs bandit allocation" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/multi-armed-bandits/mab-ab-vs-bandit-allocation.png" title="A/B test vs bandit allocation" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -96,7 +96,7 @@ The catch: **early estimates are noisy**. After showing T3 to just 50 viewers, y
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mab-estimation-noise.png" title="Noisy estimates" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/multi-armed-bandits/mab-estimation-noise.png" title="Noisy estimates" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -119,7 +119,7 @@ Set $\varepsilon = 0.1$ and 10% of impressions go to a random thumbnail.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mab-epsilon-greedy-results.png" title="Epsilon-greedy results" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/multi-armed-bandits/mab-epsilon-greedy-results.png" title="Epsilon-greedy results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -136,13 +136,13 @@ The problem with $\varepsilon$-Greedy is that it explores _blindly_. What if, in
 
 Imagine you've been running the test and here's what you know:
 
-| Thumbnail | Impressions | Clicks | Observed CTR | How confident are you? |
-|-----------|-------------|--------|-------------|----------------------|
-| T1 | 500 | 10 | 2.0% | Very confident — it's bad |
-| T2 | 500 | 26 | 5.2% | Pretty confident |
-| T3 | 12 | 1 | 8.3% | **Not confident at all!** |
-| T4 | 500 | 14 | 2.8% | Very confident — it's bad |
-| T5 | 500 | 21 | 4.2% | Pretty confident |
+| Thumbnail | Impressions | Clicks | Observed CTR | How confident are you?    |
+| --------- | ----------- | ------ | ------------ | ------------------------- |
+| T1        | 500         | 10     | 2.0%         | Very confident — it's bad |
+| T2        | 500         | 26     | 5.2%         | Pretty confident          |
+| T3        | 12          | 1      | 8.3%         | **Not confident at all!** |
+| T4        | 500         | 14     | 2.8%         | Very confident — it's bad |
+| T5        | 500         | 21     | 4.2%         | Pretty confident          |
 
 T3 _looks_ great at 8.3%, but you've only shown it 12 times. That could easily be noise — maybe nobody happened to be in the mood to click. Or maybe it really is the best. **You should show it more to find out.**
 
@@ -176,7 +176,7 @@ The philosophy is sometimes called **"optimism in the face of uncertainty"**: ac
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mab-ucb-scores.png" title="UCB score decomposition" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/multi-armed-bandits/mab-ucb-scores.png" title="UCB score decomposition" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -202,7 +202,7 @@ If T3 has received 3 impressions, 1 click: the belief is $\text{Beta}(2, 3)$ —
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mab-beta-distributions.png" title="Beta distributions at different stages" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/multi-armed-bandits/mab-beta-distributions.png" title="Beta distributions at different stages" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -223,7 +223,7 @@ This property is called **probability matching**: each thumbnail is selected wit
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mab-thompson-one-round.png" title="One round of Thompson Sampling" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/multi-armed-bandits/mab-thompson-one-round.png" title="One round of Thompson Sampling" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -236,7 +236,7 @@ As the algorithm runs, beliefs sharpen. Early on, all distributions are wide and
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mab-thompson-convergence.png" title="Posterior convergence" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/multi-armed-bandits/mab-thompson-convergence.png" title="Posterior convergence" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -249,7 +249,7 @@ Now the main event. All three algorithms on the same 5-thumbnail problem (true C
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mab-comparison.png" title="Algorithm comparison" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/multi-armed-bandits/mab-comparison.png" title="Algorithm comparison" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -270,11 +270,11 @@ Even training deep learning models involves this tradeoff. Stochastic Gradient D
 
 ## Summary
 
-| Algorithm | How it explores | Regret | Key property |
-|---|---|---|---|
-| $\varepsilon$-Greedy | Randomly — wastes impressions on known-bad thumbnails | Linear — $O(T)$ | Simple but inefficient |
-| UCB1 | Targets uncertain thumbnails via a Hoeffding-derived confidence bound | Logarithmic — $O(\log T)$ | Deterministic, theoretically grounded |
-| Thompson Sampling | Draws from belief distributions; uncertain thumbnails can "win" by chance | Logarithmic — $O(\log T)$ | Automatic, typically lowest regret |
+| Algorithm            | How it explores                                                           | Regret                    | Key property                          |
+| -------------------- | ------------------------------------------------------------------------- | ------------------------- | ------------------------------------- |
+| $\varepsilon$-Greedy | Randomly — wastes impressions on known-bad thumbnails                     | Linear — $O(T)$           | Simple but inefficient                |
+| UCB1                 | Targets uncertain thumbnails via a Hoeffding-derived confidence bound     | Logarithmic — $O(\log T)$ | Deterministic, theoretically grounded |
+| Thompson Sampling    | Draws from belief distributions; uncertain thumbnails can "win" by chance | Logarithmic — $O(\log T)$ | Automatic, typically lowest regret    |
 
 The core insight: **information has value**. Showing a viewer an under-explored thumbnail isn't wasting that impression — it's investing in learning which thumbnail is best, which pays off by routing all future viewers better. The question is how to make those investments wisely. $\varepsilon$-Greedy invests randomly. UCB1 and Thompson Sampling invest where it matters.
 

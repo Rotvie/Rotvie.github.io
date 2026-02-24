@@ -65,7 +65,7 @@ Let's assume we have a PDF called $p_{\text{twopeaks}}(x)$ — a distribution wi
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/ptwopeaks-pdf.png" title="Two Peaks PDF" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/langevin-sampling-for-diffusion/ptwopeaks-pdf.png" title="Two Peaks PDF" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -94,7 +94,7 @@ $$
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/langevin-sampling.png" title="Langevin Sampling Algorithm" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/langevin-sampling-for-diffusion/langevin-sampling.png" title="Langevin Sampling Algorithm" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -119,7 +119,7 @@ The logarithm amplifies the magnitude of the gradient in low-density regions, al
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/langevin-sampling-gradient-log.png" title="Score Function with Log" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/langevin-sampling-for-diffusion/langevin-sampling-gradient-log.png" title="Score Function with Log" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -134,7 +134,7 @@ First, we need to obtain $F(x)$ for the uniform distribution in the correct samp
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/derivative-uniform-distribution.png" title="Derivative of Uniform Distribution" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/langevin-sampling-for-diffusion/derivative-uniform-distribution.png" title="Derivative of Uniform Distribution" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -147,7 +147,7 @@ Using this $F$ and the Gaussian distribution, we can generate samples from a uni
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/uniform-distribution-from-langevin.png" title="Uniform Distribution from Langevin Sampling" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/langevin-sampling-for-diffusion/uniform-distribution-from-langevin.png" title="Uniform Distribution from Langevin Sampling" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

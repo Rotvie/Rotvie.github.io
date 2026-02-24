@@ -62,7 +62,7 @@ Once again, I was all-in with Japanese, but this time I had a plan. The first fe
 
 After a couple of months of consuming content in Japanese, I returned to Kanji and finished the book at last.
 
-{% include figure.liquid loading="eager" path="assets/img/my-japanese-handwriting.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/my-journey-learning-japanese/my-japanese-handwriting.jpg" class="img-fluid rounded z-depth-1" %}
 
 ## Where I'm At
 
