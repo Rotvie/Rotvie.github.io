@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-the-multi-armed-bandit-problem",
+            },{id: "post-introduction-to-sampling-algorithms",
+        
+          title: "Introduction to Sampling Algorithms",
+        
+        description: "From a uniform random number generator to inverse transform sampling, rejection sampling, and importance sampling — building intuition for how computers draw samples from arbitrary distributions",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/introduction-to-sampling-algorithms/";
+          
+        },
+      },{id: "post-the-multi-armed-bandit-problem",
         
           title: "The Multi-Armed Bandit Problem",
         
