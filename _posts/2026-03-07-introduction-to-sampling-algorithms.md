@@ -3,7 +3,7 @@ layout: distill
 title: Introduction to Sampling Algorithms
 description: From a uniform random number generator to inverse transform sampling, rejection sampling, and importance sampling — building intuition for how computers draw samples from arbitrary distributions
 tags: sampling, monte carlo, statistics, probability
-giscus_comments: true
+giscus_comments: false
 date: 2026-03-07
 featured: true
 
@@ -257,7 +257,7 @@ $$
 E_p[g(X)] = \int g(x) \cdot p(x) \, dx
 $$
 
-Now multiply and divide by a proposal distribution $$q(x)$$ that we *can* sample from, provided that $$q(x) > 0$$ wherever $$p(x) \neq 0$$ (the proposal must have support everywhere the target does):
+Now multiply and divide by a proposal distribution $q(x)$ that we _can_ sample from, provided that $q(x) > 0$ wherever $p(x) \neq 0$ (the proposal must have support everywhere the target does):
 
 $$
 E_p[g(X)] = \int g(x) \cdot \frac{p(x)}{q(x)} \cdot q(x) \, dx
@@ -333,11 +333,11 @@ To see this in action, suppose we want to estimate $$E_p[X^2]$$ where $$p(x) = \
 
 We started with a single primitive — a uniform random number generator — and built three increasingly flexible methods to sample from arbitrary distributions. Each method makes a different tradeoff:
 
-| Method | What it needs | Strength | Mode of failure |
-|---|---|---|---|
-| Inverse Transform Sampling | Closed-form $$F_X^{-1}$$ | Exact samples, no waste | Most distributions don't have an invertible CDF |
-| Rejection Sampling | A proposal $$cq(x) \geq p(x)$$ | Works for any evaluable target | Poor proposal choice leads to massive rejection rates — most samples are thrown away |
-| Importance Sampling | A proposal $$q(x)$$ with overlapping support | Doesn't discard samples; reweights instead | Bad $$q$$ causes a few samples to dominate via extreme weights, making the estimate unreliable |
+| Method                     | What it needs                              | Strength                                   | Mode of failure                                                                              |
+| -------------------------- | ------------------------------------------ | ------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| Inverse Transform Sampling | Closed-form $F_X^{-1}$                     | Exact samples, no waste                    | Most distributions don't have an invertible CDF                                              |
+| Rejection Sampling         | A proposal $cq(x) \geq p(x)$               | Works for any evaluable target             | Poor proposal choice leads to massive rejection rates — most samples are thrown away         |
+| Importance Sampling        | A proposal $q(x)$ with overlapping support | Doesn't discard samples; reweights instead | Bad $q$ causes a few samples to dominate via extreme weights, making the estimate unreliable |
 
 A pattern emerges across all three: **the quality of your results depends on how well you understand the shape of the distribution you're targeting.** Inverse transform sampling requires you to know the CDF so well that you can invert it analytically. Rejection sampling requires a proposal that tightly envelops the target — too loose and you waste most of your computation on rejected points. Importance sampling requires a proposal that places mass where the integrand matters — too far off and a handful of samples with extreme weights will dominate your estimate.
 

@@ -3,9 +3,9 @@ layout: distill
 title: The Multi-Armed Bandit Problem
 description: A visual walkthrough of exploration vs exploitation — from YouTube thumbnails to the algorithms behind smart experimentation
 tags: multi-armed bandits, reinforcement learning, exploration-exploitation, bayesian methods
-giscus_comments: true
+giscus_comments: false
 date: 2026-02-23
-featured: true
+featured: false
 
 authors:
   - name: Ricardo Huaman

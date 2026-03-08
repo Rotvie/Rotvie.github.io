@@ -3,9 +3,9 @@ layout: distill
 title: My Journey Learning Japanese
 description: My personal journey learning Japanese
 tags: japanese, language learning
-giscus_comments: true
+giscus_comments: false
 date: 2025-11-29
-featured: true
+featured: false
 
 authors:
   - name: Ricardo Huaman

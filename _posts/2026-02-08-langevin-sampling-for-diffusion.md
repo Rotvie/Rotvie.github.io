@@ -3,9 +3,9 @@ layout: distill
 title: Langevin Sampling for Diffusion Models
 description: An overview of Langevin Sampling for Diffusion Models
 tags: diffusion models, langevin sampling, generative models
-giscus_comments: true
+giscus_comments: false
 date: 2026-02-08
-featured: true
+featured: false
 
 authors:
   - name: Ricardo Huaman
