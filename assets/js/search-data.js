@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-introduction-to-sampling-algorithms",
+        },{id: "post-introduction-to-flow-matching-with-robotics",
+        
+          title: "Introduction to Flow Matching with Robotics",
+        
+        description: "Learning to generate collision-free robot configurations by transporting noise to data — from the math behind flow matching to a working implementation on a 2-link arm",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/flow-matching-robotics/";
+          
+        },
+      },{id: "post-introduction-to-sampling-algorithms",
         
           title: "Introduction to Sampling Algorithms",
         
