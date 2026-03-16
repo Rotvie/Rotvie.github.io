@@ -5,7 +5,7 @@ description: From a uniform random number generator to inverse transform samplin
 tags: sampling, monte carlo, statistics, probability
 giscus_comments: false
 date: 2026-03-07
-featured: true
+featured: false
 
 authors:
   - name: Ricardo Huaman

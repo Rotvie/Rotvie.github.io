@@ -166,6 +166,19 @@ d-appendix {
   }
 }
 
+d-article {
+  pre,
+  pre code,
+  pre.highlight,
+  .highlighter-rouge pre.highlight,
+  .highlight pre,
+  .highlight code {
+    white-space: pre !important;
+    word-wrap: normal !important;
+    overflow-x: auto !important;
+  }
+}
+
 @media (max-width: 1024px) {
   d-article {
     d-contents {
