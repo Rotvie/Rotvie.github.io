@@ -120,15 +120,16 @@ The full implementation is in the companion notebook. Here I'll walk through the
 
 The velocity field $$v_\theta(x_t, t)$$ is parameterized by an MLP with sinusoidal time embeddings — the same idea as positional encodings in transformers. Time $$t$$ is mapped to a high-dimensional feature vector via sinusoidal functions, projected, and added to the data projection before passing through a stack of feedforward blocks:
 
+<!-- prettier-ignore-start -->
 {% highlight python %}
 class FlowMLP(nn.Module):
-def **init**(self, dim*data=2, layers=5, channels=512, dim_t=512):
-super().**init**()
-self.dim_t = dim_t
-self.in_proj = nn.Linear(dim_data, channels)
-self.t_proj = nn.Linear(dim_t, channels)
-self.blocks = nn.Sequential(\*[Block(channels) for * in range(layers)])
-self.out_proj = nn.Linear(channels, dim_data)
+    def __init__(self, dim_data=2, layers=5, channels=512, dim_t=512):
+        super().__init__()
+        self.dim_t = dim_t
+        self.in_proj = nn.Linear(dim_data, channels)
+        self.t_proj = nn.Linear(dim_t, channels)
+        self.blocks = nn.Sequential(*[Block(channels) for _ in range(layers)])
+        self.out_proj = nn.Linear(channels, dim_data)
 
     def sinusoidal_embedding(self, t, max_positions=10000):
         t = t * max_positions
@@ -146,8 +147,8 @@ self.out_proj = nn.Linear(channels, dim_data)
         x = x + t  # additive conditioning
         x = self.blocks(x)
         return self.out_proj(x)
-
 {% endhighlight %}
+<!-- prettier-ignore-end -->
 
 The additive conditioning — projecting $$x$$ and $$t$$ separately then summing — is simple and works well for low-dimensional problems. For higher-dimensional data you'd typically use adaptive normalization (FiLM layers), but for 2D configuration space this is more than sufficient.
 
@@ -155,14 +156,15 @@ The additive conditioning — projecting $$x$$ and $$t$$ separately then summing
 
 Each training step implements the CFM objective directly:
 
+<!-- prettier-ignore-start -->
 {% highlight python %}
 for step in range(100_000):
-x1 = data[torch.randint(len(data), (batch_size,))] # sample data
-x0 = torch.randn_like(x1) # sample noise
-t = torch.rand(batch_size, device=device) # sample time
+    x1 = data[torch.randint(len(data), (batch_size,))]  # sample data
+    x0 = torch.randn_like(x1)                           # sample noise
+    t = torch.rand(batch_size, device=device)            # sample time
 
-    xt = (1 - t[:, None]) * x0 + t[:, None] * x1          # interpolate
-    target = x1 - x0                                       # target velocity
+    xt = (1 - t[:, None]) * x0 + t[:, None] * x1        # interpolate
+    target = x1 - x0                                    # target velocity
 
     pred = model(xt, t)
     loss = ((pred - target) ** 2).mean()
@@ -170,8 +172,8 @@ t = torch.rand(batch_size, device=device) # sample time
     optim.zero_grad()
     loss.backward()
     optim.step()
-
 {% endhighlight %}
+<!-- prettier-ignore-end -->
 
 Five lines of logic. Sample data, sample noise, sample time, build interpolant, regress on the velocity. The training data consists of 5,000 collision-free configurations obtained by rejection sampling — the only part of the pipeline that requires explicit collision checking.
 
@@ -188,14 +190,16 @@ Five lines of logic. Sample data, sample noise, sample time, build interpolant, 
 
 At inference, we draw Gaussian noise and integrate the learned ODE forward using Euler steps:
 
+<!-- prettier-ignore-start -->
 {% highlight python %}
-xt = torch.randn(n_samples, 2, device=device) # start from noise
+xt = torch.randn(n_samples, 2, device=device)  # start from noise
 dt = 1.0 / euler_steps
 
 for t_val in torch.linspace(0, 1, euler_steps):
-vel = model(xt, t_val.expand(n_samples))
-xt = xt + dt \* vel # Euler step
+    vel = model(xt, t_val.expand(n_samples))
+    xt = xt + dt * vel  # Euler step
 {% endhighlight %}
+<!-- prettier-ignore-end -->
 
 No denoising schedule, no noise injection, no classifier guidance. Just a forward ODE integration — 100 Euler steps, each a single forward pass through the MLP.
 
