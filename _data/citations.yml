@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-16'
+  last_updated: '2026-04-01'
 papers:
   CdEd4TQAAAAJ:2osOgNQ5qMEC:
     citations: 1
@@ -18,7 +18,7 @@ papers:
     title: Linear Quadratic Regulator (LQR) Control for the Active Suspension System of a Four-Wheeled Agricultural Robot
     year: '2023'
   CdEd4TQAAAAJ:qjMakFHDy7sC:
-    citations: 2
+    citations: 3
     title: Comparative Analysis of LiDAR Inertial Odometry Algorithms in Blueberry Crops
     year: '2025'
   CdEd4TQAAAAJ:u-x6o8ySG0sC:
