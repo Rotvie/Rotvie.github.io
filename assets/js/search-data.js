@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-introduction-to-flow-matching-with-robotics",
+        },{id: "post-decrypting-ciphers-using-markov-chain-monte-carlo",
+        
+          title: "Decrypting Ciphers Using Markov Chain Monte Carlo",
+        
+        description: "Combining Markov chains and Monte Carlo estimation to crack a substitution cipher — from bigram statistics to the Metropolis algorithm",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/decrypting-ciphers-mcmc/";
+          
+        },
+      },{id: "post-introduction-to-flow-matching-with-robotics",
         
           title: "Introduction to Flow Matching with Robotics",
         
