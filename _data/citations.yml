@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-01'
+  last_updated: '2026-08-07'
 papers:
   CdEd4TQAAAAJ:2osOgNQ5qMEC:
     citations: 1
@@ -9,6 +9,10 @@ papers:
     citations: 5
     title: Artificial vision strategy for Ripeness assessment of Blueberries on Images taken during Pre-harvest stage in Agroindustrial Environments using Deep Learning Techniques
     year: '2023'
+  CdEd4TQAAAAJ:IjCSPb-OGe4C:
+    citations: 0
+    title: Integrated Opposite-Phase Kinematics, Hybrid-A* Planning, and MPPI Control for Autonomous Navigation in Agricultural Environment
+    year: '2026'
   CdEd4TQAAAAJ:UeHWp8X0CEIC:
     citations: 0
     title: Performance Evaluation of Detection and Tracking Algorithms for Automated Grape Cluster Counting
@@ -19,7 +23,7 @@ papers:
     year: '2023'
   CdEd4TQAAAAJ:qjMakFHDy7sC:
     citations: 3
-    title: Comparative Analysis of LiDAR Inertial Odometry Algorithms in Blueberry Crops
+    title: Comparative analysis of lidar inertial odometry algorithms in blueberry crops
     year: '2025'
   CdEd4TQAAAAJ:u-x6o8ySG0sC:
     citations: 1
